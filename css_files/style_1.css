@@ -1,0 +1,38 @@
+html { /* we can use body selector for inheritance but lets keep it seperate beacuause we can us e body selector for other details specific to it*/
+    font-size: 22px; 
+}
+body {
+    background: papayawhip; /* we can check color contrast here with contrast of text for better visibilty*/
+    color: rgb(0,0,0); 
+}
+main {
+    font-family: monospace;
+    font-size: 2rem;
+}
+.grey { /*class selector overwrites and has more specifity for css than element selector no mmatter it is place above element selector it still has more priority than element selector and btw id selector is even more specific*/
+    color: gray;
+    width: 40ch;
+    
+}
+
+h1{
+    border: 2px dashed red;
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+p {
+    color: blue;
+    font-size: 2rem;
+}
+
+h1,h2 {
+    color: aqua;
+}
+.highlight {  
+    text-transform: capitalize;
+    background-color: gold;
+}
+#second {  /*should not adviced to use this "id" selector for styling better use classes and elements*/
+    font-style: italic;
+} 
